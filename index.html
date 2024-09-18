@@ -16,7 +16,7 @@
     function load(){
       var url = document.getElementById('url').value;
       var bits = url.split('=');
-      document.getElementById('vidspace').innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + bits[1] + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+      document.getElementById('vidspace').innerHTML = '<iframe class="proxy_video_frame detail__media__vid" width="100%" height="100%" src="/video_frame?url=https%3A%2F%2Fwww.youtube-nocookie.com%2Fembed%2F'+ bits[1] + '%3Fwmode%3Dtransparent%26iv_load_policy%3D3%26autoplay%3D1%26html5%3D1%26showinfo%3D0%26rel%3D0%26modestbranding%3D1%26playsinline%3D0%26theme%3Dlight" frameborder="0" scrolling="no" allowfullscreen="" mozallowfullscreen="" webkitallowfullscreen=""></iframe>'
     }
   </script>
 </html>
