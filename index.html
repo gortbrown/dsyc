@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Damn Simple Youtube Client</title>
+  </head>
+  <body>
+    <header>
+      <h1>Damn Simple YouTube Client</h1>
+    </header>
+    <input id="url" type="text" placeholder="Enter video URL here">
+    <button type="button" onclick="load()">Load</button>
+    <div id="vidspace">
+    </div>
+  </body>
+  <script>
+    function load(){
+      var url = document.getElementById('url').value;
+      var bits = url.split('=');
+      document.getElementById('vidspace').InnerHTML = "\'<iframe width="560" height="315" src="https://www.youtube.com/embed/bBQA7yy7EBU?si=k-y_S3ZtTp0HHeUn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+    }
+  </script>
+</html>
